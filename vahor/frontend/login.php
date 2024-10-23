@@ -26,16 +26,17 @@ include_once '../backend/php/login.php'
                             }
 
                         ?>
-      <form action="" method="POST" autocomplete="off">
-        <input
-          type="text" name="username" value="<?php if(isset($_POST['username'])) echo $_POST['username'] ?>"  autocomplete="off" 
-          class="form-input span-2"
-          placeholder="Nombre de usuario "
-        />
-        <input type="password" required="true" name="password" value="<?php if(isset($_POST['password'])) echo MD5($_POST['password']) ?>"  class="form-input span-2" placeholder="Contraseña" />
-     
-        <button class="btn submit-btn span-2" name='login' type="submit">Iniciar sesión</button>
-      </form>
+     <form action="" method="POST" autocomplete="off">
+    <input
+      type="text" name="username" value="<?php if(isset($_POST['username'])) echo $_POST['username']; ?>"  autocomplete="off" 
+      class="form-input span-2"
+      placeholder="Nombre de usuario "
+    />
+    <input type="password" required="true" name="password" class="form-input span-2" placeholder="Contraseña" />
+ 
+    <button class="btn submit-btn span-2" name='login' type="submit">Iniciar sesión</button>
+</form>
+
       <p class="btm-line">
         By joining, you agree to our Terms of Service and Privacy Policy
       </p>
